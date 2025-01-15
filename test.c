@@ -2,20 +2,20 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-int main()
+int main(char arc,*char[] arcv)
 {
 pid_t pid;
 char *av[] = {"cal","3","2021",(char *)0};
 pid = fork() ;
-char s;
-scanf(s);
-printf('h');
+if(arc<2){
+    printf('please enter command')
+}
 if (pid < 0) {
 printf("Error : cannot fork\n");
 exit(1);
 }
 else if (pid == 0) {
-execvp("cal",av);
+execvp(arcv[0],*arcv[1]);
 }
 else {
 wait(NULL);
