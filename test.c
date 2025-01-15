@@ -8,7 +8,7 @@ pid_t pid;
 char *av[] = {"cal","3","2021",(char *)0};
 pid = fork() ;
 if(arc<2){
-    printf('please enter command')
+    printf("please enter command")
 }
 if (pid < 0) {
 printf("Error : cannot fork\n");
