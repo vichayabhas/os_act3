@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-int main(char arc,*char[] arcv)
+int main(char arc,char[] *arcv)
 {
 pid_t pid;
 char *av[] = {"cal","3","2021",(char *)0};
