@@ -9,7 +9,7 @@ char *av[] = {"cal","3","2021",(char *)0};
 pid = fork() ;
 char s;
 scanf(s);
-printf(s);
+printf('h');
 if (pid < 0) {
 printf("Error : cannot fork\n");
 exit(1);
